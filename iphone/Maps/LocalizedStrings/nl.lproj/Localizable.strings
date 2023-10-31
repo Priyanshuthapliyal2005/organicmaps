@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "Gemeenschapscentrum";
 
+"type.amenity.compressed_air" = "Samengeperste lucht";
+
 "type.amenity.conference_centre" = "Conferentiecentrum";
 
 "type.amenity.courthouse" = "Rechtbank";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "Wildernishut";
 
 "type.tourism.zoo" = "Dierentuin";
+
+"type.tourism.zoo.petting" = "Kinderboerderij";
 
 "type.traffic_calming" = "Snelheidsmatigende maatregel";
 

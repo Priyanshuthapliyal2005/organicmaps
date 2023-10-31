@@ -673,6 +673,7 @@
 	<string name="yes_available">Есть</string>
 	<!-- E.g. "WiFi:No" -->
 	<string name="no_available">Нет</string>
+	<string name="trip_finished">Вы прибыли!</string>
 	<string name="ok">Ок</string>
 	<!-- max. 10 symbols, both iOS and Android -->
 	<string name="sort">Сортировать…</string>
@@ -819,6 +820,7 @@
 	<string name="type.amenity.clinic">Поликлиника</string>
 	<string name="type.amenity.college">Колледж</string>
 	<string name="type.amenity.community_centre">Культурно-досуговый центр</string>
+	<string name="type.amenity.compressed_air">Сжатый воздух</string>
 	<string name="type.amenity.conference_centre">Конференц-центр</string>
 	<string name="type.amenity.courthouse">Суд</string>
 	<string name="type.amenity.dentist">Стоматология</string>
@@ -2039,6 +2041,7 @@
 	<string name="type.tourism.viewpoint">Обзорная площадка</string>
 	<string name="type.tourism.wilderness_hut">Хижина в лесу</string>
 	<string name="type.tourism.zoo">Зоопарк</string>
+	<string name="type.tourism.zoo.petting">Контактный зоопарк</string>
 	<string name="type.traffic_calming">Лежачий полицейский</string>
 	<string name="type.traffic_calming.bump">Лежачий полицейский</string>
 	<string name="type.traffic_calming.hump">Лежачий полицейский</string>

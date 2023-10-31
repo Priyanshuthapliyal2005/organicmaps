@@ -29,17 +29,18 @@ buildscript {
   def googleFirebaseServicesFlag = findProperty('firebase')
   // Enable Firebase for all beta flavors except fdroid only if google-services.json exists.
   def googleFirebaseServicesDefault = isBeta && !isFdroid && file("$projectDir/google-services.json").exists()
-  ext.googleFirebaseServicesEnabled = googleFirebaseServicesFlag ? googleFirebaseServicesFlag.toBoolean() :
+  ext.googleFirebaseServicesEnabled = googleFirebaseServicesFlag != null ?
+      googleFirebaseServicesFlag == '' || googleFirebaseServicesFlag.toBoolean() :
       googleFirebaseServicesDefault
 
   // Android Auto compile-time feature flag: -Pandroidauto=true|false
   def androidAutoFlag = findProperty('androidauto')
   // Enable Android Auto by default for all debug and beta flavors except fdroid.
   def androidAutoDefault = isSyncWithFiles || ((isDebug || isBeta) && !isFdroid)
-  ext.androidAutoEnabled = androidAutoFlag ? androidAutoFlag.toBoolean() : androidAutoDefault
+  ext.androidAutoEnabled = androidAutoFlag != null ? androidAutoFlag.toBoolean() : androidAutoDefault
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:8.1.1'
+    classpath 'com.android.tools.build:gradle:8.1.2'
 
     if (googleMobileServicesEnabled) {
       println('Building with Google Mobile Services')
@@ -109,6 +110,7 @@ dependencies {
   // > A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
   // We don't use Kotlin, but some dependencies are actively using it.
   // See https://stackoverflow.com/a/75719642
+  implementation 'androidx.core:core:1.12.0'
   implementation(platform('org.jetbrains.kotlin:kotlin-bom:1.9.10'))
   implementation 'androidx.annotation:annotation:1.7.0'
   implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -165,10 +167,10 @@ android {
     dataBinding = true
   }
   // All properties are read from gradle.properties file
-  compileSdkVersion propCompileSdkVersion.toInteger()
-  buildToolsVersion propBuildToolsVersion
+  compileSdk propCompileSdkVersion.toInteger()
+  buildToolsVersion = propBuildToolsVersion
 
-  ndkVersion '26.0.10792818'
+  ndkVersion '26.1.10909125'
 
   defaultConfig {
     // Default package name is taken from the manifest and should be app.organicmaps
@@ -177,16 +179,13 @@ android {
     versionName = ver.V2
     println('Version: ' + versionName)
     println('VersionCode: ' + versionCode)
-    minSdkVersion propMinSdkVersion.toInteger()
-    targetSdkVersion propTargetSdkVersion.toInteger()
+    minSdk propMinSdkVersion.toInteger()
+    targetSdk propTargetSdkVersion.toInteger()
     applicationId project.ext.appId
     buildConfigField 'String', 'SUPPORT_MAIL', '"android@organicmaps.app"'
     // Should be customized in flavors.
     buildConfigField 'String', 'REVIEW_URL', '""'
     resourceConfigurations += [project.ext.supportedLocalizations]
-
-    multiDexEnabled true
-    multiDexKeepFile file('multidex-config.txt')
 
     externalNativeBuild {
       def pchFlag = 'OFF'
@@ -306,7 +305,7 @@ android {
     android.applicationVariants.all { variant ->
       def task = variant.name.capitalize()
       project.task(type: Exec, "run${task}", dependsOn: "install${task}") {
-        commandLine android.getAdbExe(), 'shell', 'am', 'start', '-n', "${applicationId}/app.organicmaps.SplashActivity"
+        commandLine android.getAdbExe(), 'shell', 'am', 'start', '-n', "$applicationId/app.organicmaps.DownloadResourcesActivity", '-a', 'android.intent.action.MAIN', '-c', 'android.intent.category.LAUNCHER'
       }
     }
   }
@@ -354,7 +353,7 @@ android {
       shrinkResources true
       // Includes the default ProGuard rules files that are packaged with the Android Gradle plugin.
       // To learn more, go to the documentation section about R8 configuration files.
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-mwm.txt'
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
       resValue 'string', 'app_id', android.defaultConfig.applicationId
       resValue 'string', 'app_name', project.ext.appName
       // Full size symbols are too big for Google, 217mb aab vs 95mb.
@@ -375,7 +374,7 @@ android {
       shrinkResources true
       // Includes the default ProGuard rules files that are packaged with the Android Gradle plugin.
       // To learn more, go to the documentation section about R8 configuration files.
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-mwm.txt'
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
       matchingFallbacks = ['debug', 'release']
       resValue 'string', 'app_id', android.defaultConfig.applicationId + applicationIdSuffix
       resValue 'string', 'app_name', project.ext.appName + ' ' + '(Beta)'
@@ -409,7 +408,7 @@ android {
   // TODO: Load all minor files via separate call to ReadAsString which can correctly handle compressed files in zip containers.
   androidResources {
     ignoreAssetsPattern '!.svn:!.git:!.DS_Store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~'
-    noCompress 'txt', 'bin', 'html', 'png', 'json', 'mwm', 'ttf', 'sdf', 'ui', 'config', 'csv', 'spv', 'obj'
+    noCompress = ['txt', 'bin', 'html', 'png', 'json', 'mwm', 'ttf', 'sdf', 'ui', 'config', 'csv', 'spv', 'obj']
   }
 
   compileOptions {

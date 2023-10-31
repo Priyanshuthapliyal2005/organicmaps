@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "社區活動中心";
 
+"type.amenity.compressed_air" = "壓縮的空氣";
+
 "type.amenity.conference_centre" = "會議中心";
 
 "type.amenity.courthouse" = "法院";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "山屋";
 
 "type.tourism.zoo" = "動物園";
+
+"type.tourism.zoo.petting" = "寵物動物園";
 
 "type.traffic_calming" = "Traffic Calming";
 

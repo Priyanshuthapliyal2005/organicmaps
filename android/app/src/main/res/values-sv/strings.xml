@@ -630,6 +630,7 @@
 	<string name="yes_available">Ja</string>
 	<!-- E.g. "WiFi:No" -->
 	<string name="no_available">Nej</string>
+	<string name="trip_finished">Du är framme!</string>
 	<string name="ok">Ok</string>
 	<!-- max. 10 symbols, both iOS and Android -->
 	<string name="sort">Sortera…</string>
@@ -691,6 +692,22 @@
 	<string name="translated_om_site_url">https://organicmaps.app/sv/</string>
 	<!-- Tip #00 -->
 	<string name="app_tip_00">Tack för att du använder våra gemenskapsbyggda kartor!</string>
+	<!-- Text on the Android Auto placeholder screen that maps are displayed on the phone screen -->
+	<string name="aa_used_on_the_phone_screen">Du använder nu Organic Maps på telefonens skärm</string>
+	<!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
+	<string name="aa_used_on_the_car_screen">Du använder nu Organic Maps på bilskärmen</string>
+	<!-- Displayed on the phone screen. Android Auto connected -->
+	<string name="aa_connected_title">Du är ansluten till Android Auto</string>
+	<!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
+	<string name="aa_continue_on_the_phone">Fortsätt i telefonen</string>
+	<!-- Displayed on the Android Auto screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
+	<string name="aa_continue_in_the_car">Till bilens skärm</string>
+	<!-- Ask user to grant location permissions -->
+	<string name="aa_location_permissions_request">Denna applikation kräver åtkomst till din plats för navigeringssyften.</string>
+	<!-- Displayed on the Android Auto screen. Grant Permissions button. Must be no more than 18 symbols! -->
+	<string name="aa_grant_permissions">Tilldela behörigheter</string>
+	<!-- Text that will be displayed in the notification title when the app is connected to Android Auto. -->
+	<string name="aa_connected_to_car_notification_title">Ansluten till bilen</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Adress/Block</string>
@@ -728,6 +745,7 @@
 	<string name="type.amenity.clinic">Klinik</string>
 	<string name="type.amenity.college">Högskola</string>
 	<string name="type.amenity.community_centre">Stadshus</string>
+	<string name="type.amenity.compressed_air">Tryckluft</string>
 	<string name="type.amenity.conference_centre">Konferens Center</string>
 	<string name="type.amenity.courthouse">Domstol</string>
 	<string name="type.amenity.dentist">Tandläkare</string>
@@ -1779,6 +1797,7 @@
 	<string name="type.tourism.theme_park">Attraktion</string>
 	<string name="type.tourism.viewpoint">Utsiktsplats</string>
 	<string name="type.tourism.wilderness_hut">Vildmarksstuga</string>
+	<string name="type.tourism.zoo.petting">Petting Zoo</string>
 	<string name="type.waterway.canal">Kanal</string>
 	<string name="type.waterway.canal.tunnel">Kanal</string>
 	<string name="type.waterway.fish_pass">Fiskstege</string>

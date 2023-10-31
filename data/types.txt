@@ -348,7 +348,7 @@ amenity|parking|permissive
 *sport|shooting
 *place|country
 *highway|path|alpine_hiking
-mapswithme
+*tourism|zoo|petting
 *sport|scuba_diving
 *highway|cycleway|permissive
 *highway|unclassified|area
@@ -1589,3 +1589,4 @@ amenity|recycling|container
 *amenity|parking|underground|private
 *amenity|parking|street_side|private
 *amenity|parking|lane|private
+*amenity|compressed_air

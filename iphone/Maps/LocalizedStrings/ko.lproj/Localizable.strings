@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "커뮤니티센터";
 
+"type.amenity.compressed_air" = "압축 공기";
+
 "type.amenity.conference_centre" = "컨퍼런스 센터";
 
 "type.amenity.courthouse" = "법원";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "황야 오두막";
 
 "type.tourism.zoo" = "동물원";
+
+"type.tourism.zoo.petting" = "페팅 동물원";
 
 "type.traffic_calming" = "Traffic Calming";
 

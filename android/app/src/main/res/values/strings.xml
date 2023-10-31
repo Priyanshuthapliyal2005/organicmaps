@@ -691,6 +691,7 @@
 	<string name="yes_available">Yes</string>
 	<!-- E.g. "WiFi:No" -->
 	<string name="no_available">No</string>
+	<string name="trip_finished">You have arrived!</string>
 	<string name="ok">OK</string>
 	<!-- max. 10 symbols, both iOS and Android -->
 	<string name="sort">Sort…</string>
@@ -841,6 +842,7 @@
 	<string name="type.amenity.clinic">Clinic</string>
 	<string name="type.amenity.college">College</string>
 	<string name="type.amenity.community_centre">Community Centre</string>
+	<string name="type.amenity.compressed_air">Compressed Air</string>
 	<string name="type.amenity.conference_centre">Conference Center</string>
 	<string name="type.amenity.courthouse">Courthouse</string>
 	<string name="type.amenity.dentist">Dentist</string>
@@ -2079,6 +2081,7 @@
 	<string name="type.tourism.viewpoint">Viewpoint</string>
 	<string name="type.tourism.wilderness_hut">Wilderness Hut</string>
 	<string name="type.tourism.zoo">Zoo</string>
+	<string name="type.tourism.zoo.petting">Petting Zoo</string>
 	<string name="type.traffic_calming">Traffic Calming</string>
 	<string name="type.traffic_calming.bump">Traffic Bump</string>
 	<string name="type.traffic_calming.hump">Traffic Hump</string>

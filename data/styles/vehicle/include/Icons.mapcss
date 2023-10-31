@@ -499,6 +499,10 @@ node|z17-[amenity=place_of_worship],
 area|z17-[amenity=place_of_worship],
 {text: name;text-color: @poi_label;text-offset: 1;font-size: 10;}
 
+node|z16-[amenity=prison],
+area|z16-[amenity=prison]
+{icon-image: prison-m.svg;text: name;text-color: @poi_label;text-offset: 1;font-size: 11;}
+
 /*node|z13-[leisure=stadium],
 area|z13-[leisure=stadium],*/
 area|z15-[amenity=university],
@@ -883,6 +887,10 @@ area|z17-[amenity=sanitary_dump_station]
 node|z18-[amenity=sanitary_dump_station],
 area|z18-[amenity=sanitary_dump_station]
 {font-size: 14.5; icon-min-distance: 10;}
+
+node|z18-[amenity=compressed_air],
+area|z18-[amenity=compressed_air],
+{icon-image: compressed_air-m.svg;}
 
 node|z16-[amenity=water_point],
 area|z16-[amenity=water_point],

@@ -55,6 +55,7 @@ world  +
         clinic  -
         college  -
         community_centre  -
+        compressed_air  -
         conference_centre  -
         courthouse  -
         dentist  -
@@ -1383,7 +1384,9 @@ world  +
         theme_park  -
         viewpoint  -
         wilderness_hut  -
-        zoo  -
+        zoo  +
+            petting  -
+            {}
         {}
     traffic_calming  +
         bump  -

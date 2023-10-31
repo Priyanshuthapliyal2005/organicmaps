@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "Toplum Merkezi";
 
+"type.amenity.compressed_air" = "Basınçlı hava";
+
 "type.amenity.conference_centre" = "Konferans merkezi";
 
 "type.amenity.courthouse" = "Adliye";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "Vahşi Doğa Kulübesi";
 
 "type.tourism.zoo" = "Hayvanat Bahçesi";
+
+"type.tourism.zoo.petting" = "Sevişme Hayvanat Bahçesi";
 
 "type.traffic_calming" = "Hız Kesici (Kasis)";
 

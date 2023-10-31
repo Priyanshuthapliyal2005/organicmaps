@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -169,9 +170,16 @@ public class SplashActivity extends AppCompatActivity
   }
 
   // Called from MwmApplication::nativeInitFramework like callback.
+  @Keep
   @SuppressWarnings({"unused", "unchecked"})
   public void processNavigation()
   {
+    if (isDestroyed())
+    {
+      Logger.w(TAG, "Ignore late callback from core because activity is already destroyed");
+      return;
+    }
+
     Intent input = getIntent();
     Intent result = new Intent(this, DownloadResourcesLegacyActivity.class);
     if (input != null)

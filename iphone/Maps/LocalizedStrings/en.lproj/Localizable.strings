@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "Community Centre";
 
+"type.amenity.compressed_air" = "Compressed Air";
+
 "type.amenity.conference_centre" = "Conference Center";
 
 "type.amenity.courthouse" = "Courthouse";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "Wilderness Hut";
 
 "type.tourism.zoo" = "Zoo";
+
+"type.tourism.zoo.petting" = "Petting Zoo";
 
 "type.traffic_calming" = "Traffic Calming";
 

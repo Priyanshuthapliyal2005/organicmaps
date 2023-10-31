@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "Stadshus";
 
+"type.amenity.compressed_air" = "Tryckluft";
+
 "type.amenity.conference_centre" = "Konferens Center";
 
 "type.amenity.courthouse" = "Domstol";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "Vildmarksstuga";
 
 "type.tourism.zoo" = "Zoo";
+
+"type.tourism.zoo.petting" = "Petting Zoo";
 
 "type.traffic_calming" = "Traffic Calming";
 

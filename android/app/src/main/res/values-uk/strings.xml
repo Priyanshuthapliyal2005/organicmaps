@@ -659,6 +659,7 @@
 	<string name="yes_available">Так</string>
 	<!-- E.g. "WiFi:No" -->
 	<string name="no_available">Ні</string>
+	<string name="trip_finished">Ви прибули!</string>
 	<string name="ok">Ок</string>
 	<!-- max. 10 symbols, both iOS and Android -->
 	<string name="sort">Сортувати</string>
@@ -726,6 +727,22 @@
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Uk:Про_проект</string>
 	<!-- Tip #00 -->
 	<string name="app_tip_00">Дякуємо, що користуєтесь нашими мапами, створеними спільнотою!</string>
+	<!-- Text on the Android Auto placeholder screen that maps are displayed on the phone screen -->
+	<string name="aa_used_on_the_phone_screen">Зараз ви використовуєте Organic Maps на екрані телефону</string>
+	<!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
+	<string name="aa_used_on_the_car_screen">Ви використовуєте Organic Maps на екрані автомобіля</string>
+	<!-- Displayed on the phone screen. Android Auto connected -->
+	<string name="aa_connected_title">Ви підключені до Android Auto</string>
+	<!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
+	<string name="aa_continue_on_the_phone">Продовжуйте в телефоні</string>
+	<!-- Displayed on the Android Auto screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
+	<string name="aa_continue_in_the_car">На екран автомобіля</string>
+	<!-- Ask user to grant location permissions -->
+	<string name="aa_location_permissions_request">Ця програма потребує доступу до вашого місцезнаходження для навігаційних цілей.</string>
+	<!-- Displayed on the Android Auto screen. Grant Permissions button. Must be no more than 18 symbols! -->
+	<string name="aa_grant_permissions">Надавати дозволи</string>
+	<!-- Text that will be displayed in the notification title when the app is connected to Android Auto. -->
+	<string name="aa_connected_to_car_notification_title">Підключено до автомобіля</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Адреса/блок</string>
@@ -778,6 +795,7 @@
 	<string name="type.amenity.clinic">Поліклініка</string>
 	<string name="type.amenity.college">Коледж</string>
 	<string name="type.amenity.community_centre">Центр культури та дозвілля, Дім культури</string>
+	<string name="type.amenity.compressed_air">Стиснене повітря</string>
 	<string name="type.amenity.conference_centre">Конференц-центр</string>
 	<string name="type.amenity.courthouse">Суд</string>
 	<string name="type.amenity.dentist">Стоматологія</string>
@@ -1985,6 +2003,7 @@
 	<string name="type.tourism.viewpoint">Оглядний майданчик</string>
 	<string name="type.tourism.wilderness_hut">Хибара</string>
 	<string name="type.tourism.zoo">Зоопарк</string>
+	<string name="type.tourism.zoo.petting">Контактний зоопарк</string>
 	<string name="type.traffic_calming">Лежачий полiцейський</string>
 	<string name="type.traffic_calming.bump">Лежачий полiцейський</string>
 	<string name="type.traffic_calming.hump">Лежачий полiцейський</string>

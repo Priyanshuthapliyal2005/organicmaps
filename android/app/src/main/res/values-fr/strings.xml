@@ -667,6 +667,7 @@
 	<string name="yes_available">oui</string>
 	<!-- E.g. "WiFi:No" -->
 	<string name="no_available">non</string>
+	<string name="trip_finished">Vous êtes arrivé !</string>
 	<string name="ok">Ok</string>
 	<!-- max. 10 symbols, both iOS and Android -->
 	<string name="sort">Trier…</string>
@@ -808,6 +809,7 @@
 	<string name="type.amenity.clinic">Clinique</string>
 	<string name="type.amenity.college">Enseignement post-secondaire</string>
 	<string name="type.amenity.community_centre">Salle polyvalente</string>
+	<string name="type.amenity.compressed_air">Air comprimé</string>
 	<string name="type.amenity.conference_centre">Centre de conférence</string>
 	<string name="type.amenity.courthouse">Palais de justice</string>
 	<string name="type.amenity.dentist">Dentiste</string>
@@ -1973,6 +1975,7 @@
 	<string name="type.tourism.theme_park">Parc d\'attractions</string>
 	<string name="type.tourism.viewpoint">Belvédère</string>
 	<string name="type.tourism.wilderness_hut">Refuge non gardé</string>
+	<string name="type.tourism.zoo.petting">Zoo pour enfants</string>
 	<string name="type.traffic_calming.bump">Ralentisseur</string>
 	<string name="type.traffic_calming.hump">Ralentisseur</string>
 	<string name="type.waterway.fish_pass">Échelle à poissons</string>

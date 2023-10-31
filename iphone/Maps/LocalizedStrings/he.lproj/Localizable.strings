@@ -1341,6 +1341,8 @@
 
 "type.amenity.community_centre" = "Community Centre";
 
+"type.amenity.compressed_air" = "אוויר דחוס";
+
 "type.amenity.conference_centre" = "מרכז כנסים";
 
 "type.amenity.courthouse" = "Courthouse";
@@ -3754,6 +3756,8 @@
 "type.tourism.wilderness_hut" = "Wilderness Hut";
 
 "type.tourism.zoo" = "Zoo";
+
+"type.tourism.zoo.petting" = "פינת חי";
 
 "type.traffic_calming" = "Traffic Calming";
 
